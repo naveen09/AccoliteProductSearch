@@ -1,0 +1,38 @@
+<md-content layout-padding="" layout-wrap="">
+    <center>
+        <form ng-submit="search()">
+            <table>
+                <td>
+                    <md-input-container style="width: 400px;">
+                        <label>
+                            Search (by tag)
+                        </label>
+                        <md-icon class="name fa fa-search">
+                        </md-icon>
+                        <input ng-model="vm.search">
+                        </input>
+                        <md-button aria-label="clear" class="md-icon-button clearBtn" ng-click="clearSearchText()">
+                            <md-icon class="fa fa-times">
+                            </md-icon>
+                        </md-button>
+                    </md-input-container>
+                </td>
+                <td>
+                    <md-progress-circular class="md-warn md-hue-3" md-diameter="70" ng-if="vm.showloading" style="margin-top: -40px;">
+                    </md-progress-circular>
+                </td>
+            </table>
+        </form>
+    </center>
+    <div class="results">
+        <i class="fa fa-database">
+        </i>
+        Results: {{filteredItems.length}} items found
+        <md-content layout-padding="" layout-wrap="">
+            <div ng-repeat="item in (filteredItems = (vm.searchResults | filter: {tags:vm.search}| orderBy: vm.sortby))">
+                <product data="item">
+                </product>
+            </div>
+        </md-content>
+    </div>
+</md-content>

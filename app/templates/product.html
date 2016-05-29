@@ -1,0 +1,43 @@
+<md-content class="md-padding" layout="row" layout-xs="column">
+    <div flex-gt-xs="80" flex-xs="" layout="column">
+        <md-card>
+            <md-card-title>
+                <md-card-title-media>
+                    <div class="md-media-lg card-media">
+                        <img ng-src="{{item.image}}">
+                        </img>
+                    </div>
+                </md-card-title-media>
+                <md-card-title-text>
+                    <span class="md-headline">
+                        {{item.name}}
+                    </span>
+                    <span class="md-subhead">
+                        <i class="fa fa-tag">
+                        </i>
+                        {{item.tags | tag }}
+                    </span>
+                    <span class="md-subhead">
+                        <i class="fa fa-chain">
+                        </i>
+                        <a href="{{item.link}}" target="_blank">
+                            {{item.link | link }}
+                        </a>
+                    </span>
+                    <span class="md-subhead">
+                        <md-slider aria-label="red" flex="" id="red-slider" max="5" md-discrete="" min="0" ng-model="item.rating" ng-readonly="readonly" step="0.5">
+                        </md-slider>
+                    </span>
+                </md-card-title-text>
+            </md-card-title>
+            <div class="description">
+                Description:
+                <md-card-content>
+                    {{item.description}}
+                    <md-card-content>
+                    </md-card-content>
+                </md-card-content>
+            </div>
+        </md-card>
+    </div>
+</md-content>

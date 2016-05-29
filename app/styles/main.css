@@ -1,0 +1,66 @@
+.brand-logo{
+  background-image: url('../images/logo_mini.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 50px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.sidenav {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+body{
+  overflow-y: hidden;
+}
+.content{
+   height: 100vh;
+}
+.results{
+ height: 80vh; 
+}
+.acconav{
+  background-color: #222626 !important;
+  color: white;
+}
+.mar_left_20{
+margin-left: 60px !important;
+}
+.logo_title{
+font-size: 1.5em;
+}
+.quote{
+font-size: 0.8em;
+}
+.fa-custom{
+  color: white !important;
+  font-size: 1.5em;
+}
+.clearBtn{
+  float: right;
+  position: absolute;
+  padding-left: 10px;
+  margin: 0 -15px !important;
+}
+.md-headline{
+  text-align: center;
+  margin: -5px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3F51B5;
+  color: white;
+}
+.md-subhead{
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+}
+md-card md-card-title md-card-title-media .md-media-lg{
+   height: 200px;
+    width: 200px;
+}
+.description{
+  padding: 10px;
+  background-color: #D9EDFF;
+}

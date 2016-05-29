@@ -1,0 +1,20 @@
+<!-- This is the template for side nav bar -->
+<section class="content" flex="" layout="row">
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools fa fa-sort">
+                &nbsp; Sort by
+            </h1>
+        </md-toolbar>
+        <md-content layout-padding flex>
+            <md-radio-group ng-model="vm.sortby" ng-change="sort(vm.sortby)">
+                <md-radio-button class="md-primary" value="likes" >
+                    Likes
+                </md-radio-button>
+                <md-radio-button  class="md-primary" value="rating">
+                    Ratings
+                </md-radio-button>
+            </md-radio-group>
+        </md-content>
+    </md-sidenav>
+</section>
